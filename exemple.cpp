@@ -1,13 +1,17 @@
-<picture>
-   <source media="(prefers-color-scheme: dark)" srcset="doc/shamrock-doc/src/images/no_background_nocolor.png"  width="600">
-   <img alt="text" src="doc/logosham_white.png" width="600">
- </picture>
+// -------------------------------------------------------//
+//
+// SHAMROCK code for hydrodynamics
+// Copyright(C) 2021-2023 Timothée David--Cléris <timothee.david--cleris@ens-lyon.fr>
+// Licensed under CeCILL 2.1 License, see LICENSE for more information
+//
+// -------------------------------------------------------//
 
-# Shamrock units library
+#include "shamunits/Constants.hpp"
+#include "shamunits/Names.hpp"
+#include <iostream>
+#include <shamunits/UnitSystem.hpp>
 
-This is the units library in use in the Shamrock code, this repository will be updated when change are made to this library in the Shamrock monorepo. 
-
-```c++
+// g++ -std=c++17 -Iinclude exemple.cpp
 
 int main(void){
 
@@ -40,5 +44,3 @@ int main(void){
     std::cout << astro_cte.G() << std::endl;
 
 }
-
-```
